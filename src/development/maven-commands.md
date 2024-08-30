@@ -21,7 +21,10 @@ function mvn() {
 ## Override java properties
 
 ```bash
-mvn spring-boot:run -Dspring.profiles.active=debug -Denvironment.endpoint=https://my.company.dev.endpoint.com
+mvn spring-boot:run \
+  -Dspring.profiles.active=debug \
+  -Denvironment.endpoint=https://my.company.dev.endpoint.com \
+  -Dserver.port=3000
 ```
 
 ## Test utilities
