@@ -27,6 +27,8 @@ function run() {
     exit 1
   fi
 
+  chmod u+x ./"${files[0]}"
+
   ./"${files[0]}" $arguments
 }
 
