@@ -2,11 +2,13 @@
 tags:
   - linux
   - guide
-  - LUSK
+  - LUKS
   - disk-encryption
+  - intel-rapid-storage-technology
+  - ahci
 ---
 
-# Dual boot Linux with LUSK full disk encryption
+# Dual boot Linux with LUKS full disk encryption
 
 Hi I would like to share with you some useful reference if you want to work with a Linux based OS on your computer, since I had some hassles while doing it (especially by switching from RAID/IDE to AHCI). As the title says we will use full disk encryption: I know it is a bit more bothersome, since you will need two passwords to login (one for unencrypting your disk, the other one to actually login in your user profile), but I think it is a better practice to protect potentially confidential information. As a matter of fact, just using home encryption does not cover your swap partition or folders like `/tmp` or `/var/log` to be read by externally booting your disk.
 
