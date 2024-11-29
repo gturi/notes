@@ -6,6 +6,7 @@ tags:
   - openssh
   - rclone
   - fuse
+  - backup
 ---
 
 # Mount an Android device on your pc filesystem over ssh 
