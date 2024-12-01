@@ -75,9 +75,10 @@ sudo cryptsetup open /dev/sdX $myDevice
 ## Create the filesystem
 
 ```bash
-sudo mkfs.btrfs -f -L "$deviceLabel" /dev/mapper/$myDevice 
+sudo mkfs.btrfs -f -L "$deviceLabel" /dev/mapper/$myDevice
 ```
 
+The `$deviceLabel` is user friendly name to assign to the device, which will be used by your desktop environment when mounting the device.
 
 ## Backup LUKS headers
 
