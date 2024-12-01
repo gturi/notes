@@ -87,13 +87,13 @@ If the sectors containing the LUKS headers are damaged - by user error or HW fai
 To backup the LUKS headers, use the following command:
 
 ```bash
-sudo cryptsetup luksHeaderBackup --header-backup-file "$HOME/Desktop/$myDevice.luksHeaderBackup" /dev/X
+sudo cryptsetup luksHeaderBackup --header-backup-file "$HOME/Desktop/$deviceLabel.luksHeaderBackup" /dev/X
 ```
 
 To restore the LUKS headers, use the following command:
 
 ```bash
-cryptsetup luksHeaderRestore --header-backup-file "$HOME/Desktop/$myDevice.luksHeaderBackup" /dev/X
+cryptsetup luksHeaderRestore --header-backup-file "$HOME/Desktop/$deviceLabel.luksHeaderBackup" /dev/X
 ```
 
 
