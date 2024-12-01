@@ -104,7 +104,8 @@ For removable devices, it is normal that a file system that supports Linux permi
 To change ownership of the entire device by changing the ownership of the mount point, execute:
 
 ```bash
-sudo chown $USER:$USER "/run/media/$USER/$deviceLabel"
+sudo chown "$USER:$USER" "/run/media/$USER/$deviceLabel"
+sudo chown "$USER:$USER" "$HOME/Desktop/$deviceLabel.luksHeaderBackup"
 ```
 
 Mount points of removable devices are automatically created and removed when the device is plugged in/out.
