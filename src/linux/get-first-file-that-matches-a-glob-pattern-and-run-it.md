@@ -32,5 +32,5 @@ function run() {
   ./"${files[0]}" $arguments
 }
 
-run "OpenRGB_*.appimage" $@
+run "OpenRGB_*\.[aA]pp[iI]mage" $@
 ```
