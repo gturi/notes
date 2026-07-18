@@ -41,6 +41,12 @@ ls -la "$HOME/.ssh"
 | `.ssh/id_xxx.pub`  | `-rw-r--r--` | `644` |
 | `.ssh/known_hosts` | `-rw-------` | `600` |
 
+## Copying ssh public key to a server
+
+```bash
+ssh-copy-id -i ~/.ssh/${my_custom_name}.pub ${user}@${server_ip}
+```
+
 
 ## References
 
